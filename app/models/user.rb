@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
   has_many :microposts
-  #validates :content, presence: true
-#  validates :Email, presence: true
+  validates :name, presence: true
+  validates :email, presence: true
 end
