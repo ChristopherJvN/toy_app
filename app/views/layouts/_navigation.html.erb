@@ -1,0 +1,25 @@
+<%# navigation styled for Bootstrap 3.0 %>
+<nav class="navbar navbar-default navbar-static-top">
+   <div class="container">
+       <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+           </button>
+           <a href="/">
+               <%= image_tag 'kizzler1.jpg', :height => "50px",  :alt => "kizzler logo" %>
+           </a>
+
+       </div>
+       <div id="navbar" class="collapse navbar-collapse">
+           <ul class="nav navbar-nav navbar-right">
+               <li><%= link_to'New User', new_user_path %></li>
+               <li><%= link_to'Micropost Page', microposts_path %></li>
+               <li><%= link_to  '<i class="glyphicon glyphicon-user"></i> Users'.html_safe, users_path%></li>
+
+           </ul>
+       </div>
+   </div>
+</nav>
