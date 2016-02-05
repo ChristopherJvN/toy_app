@@ -7,8 +7,16 @@
 
 <p>
   <strong>User:</strong>
-  <%= @micropost.user_id %>
+  <%= @micropost.user.name %>
 </p>
+<br>
+<p>
+      <strong>Created at: </strong>
+      <%= @micropost.created_at.to_formatted_s(:short) %>
+      </br> <strong>Updated at: </strong>
+      <%= @micropost.updated_at.to_formatted_s(:short) %>
+</p>
+<hr>
 
 <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
 <%= link_to 'Back', microposts_path %>
